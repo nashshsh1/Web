@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #d3d3d3;
 }
+
 .header {
     background-color: #b0b0b0;
     padding: 10px 20px;
@@ -11,18 +12,21 @@ body {
     justify-content: space-between;
     border-bottom: 2px solid #d3d3d3;
 }
+
 .header .logo {
     width: 40px;
     height: 40px;
     background-color: #4a4a4a;
     border-radius: 50%;
 }
+
 .header nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #000;
     font-size: 18px;
 }
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -30,17 +34,21 @@ body {
     height: calc(100vh - 60px);
     padding: 0 20px;
 }
+
 .left-section {
     max-width: 50%;
 }
+
 .left-section h1 {
     font-size: 36px;
     color: #4a4a4a;
 }
+
 .left-section p {
     font-size: 18px;
     color: #4a4a4a;
 }
+
 .right-section {
     background-color: #fff;
     padding: 40px;
@@ -49,11 +57,13 @@ body {
     width: 400px; /* Width of login UI */
     position: relative; /* To position the popup relative to this section */
 }
+
 .right-section h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #4a4a4a;
 }
+
 .right-section input {
     width: 100%;
     padding: 15px;
@@ -61,6 +71,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .right-section button {
     width: 100%;
     padding: 15px;
@@ -70,6 +81,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .right-section a {
     display: block;
     text-align: center;
@@ -77,11 +89,13 @@ body {
     color: #4a4a4a;
     text-decoration: none;
 }
+
 .popup {
     display: none;
-    position: absolute; /* Changed to absolute positioning */
-    top: 0; /* Align with the login UI */
-    left: 0;
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Center the popup vertically */
+    left: 50%; /* Center the popup horizontally */
+    transform: translate(-50%, -50%); /* Center the popup using transform */
     width: 400px; /* Match width of the login UI */
     padding: 40px; /* Match the padding of the right section */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -89,11 +103,13 @@ body {
     background-color: #fff; /* Normal background */
     z-index: 1000; /* Ensure it's on top */
 }
+
 .popup-content h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #4a4a4a;
 }
+
 .popup-content input {
     width: calc(100% - 30px); /* Adjust width to match input fields */
     padding: 15px;
@@ -101,6 +117,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .popup-content button {
     width: 100%;
     padding: 15px;
@@ -110,26 +127,47 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .close-popup {
     cursor: pointer;
     color: #4a4a4a;
     text-decoration: underline;
     float: right;
 }
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        height: auto; /* Allow height to adjust for content */
     }
+
     .left-section {
         max-width: 100%;
         margin-bottom: 20px;
+        padding: 0 10px; /* Adjust padding */
     }
+
     .right-section {
         width: 90%;
+        padding: 20px; /* Adjust padding */
     }
+
+    .right-section h2 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .right-section input,
+    .right-section button {
+        padding: 10px; /* Adjust button and input padding */
+    }
+
     .popup {
         width: 90%; /* Match the width on smaller screens */
+    }
+
+    .popup-content h2 {
+        font-size: 24px; /* Smaller font size for popups */
     }
 }
