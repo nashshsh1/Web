@@ -49,3 +49,4 @@ window.onclick = function(event) {
         confirmEmailPopup.style.display = 'none'; // Hide the confirm email popup
     }
 }
+
