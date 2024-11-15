@@ -31,7 +31,7 @@ nextButton.onclick = function() {
 // Navigate to signup_complete.html when Sign Up button is clicked
 const signUpButton = document.querySelector('#confirm-email-popup button');
 signUpButton.onclick = function() {
-    window.location.href = 'signup_complete.html'; // Redirect to signup complete page
+    window.location.href = './dashboard/dashboard.html'; // Redirect to signup complete page
 };
 
 // Return to the signup popup when the Review Your Details link is clicked
