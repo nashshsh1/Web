@@ -15,18 +15,18 @@
         </div>
         <div class="right-section">
             <h2>Login</h2>
-            <input type="text" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <button>Login</button>
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-button">Login</button>
             <a href="#" id="signup-link">Need an account? SIGN UP</a>
-
+          
             <!-- Signup Popup -->
             <div class="popup" id="signup-popup">
                 <span class="close-popup" id="close-popup">&times;</span>
                 <h2>Sign Up</h2>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="signup-email" placeholder="Email">
+                <input type="password" id="signup-password" placeholder="Password">
                 <button id="next-button">Next</button>
             </div>
 
@@ -34,9 +34,9 @@
             <div class="popup" id="confirm-email-popup">
                 <span class="close-popup" id="close-confirm-popup">&times;</span>
                 <h2>Confirm your Email</h2>
-                <p>We'll send you a code please check your email</p>
+                <p>We'll send you a code. Please check your email</p>
                 <input type="text" placeholder="Enter code">
-                <button>Sign up</button>
+                <button id="confirm-signup-button">Sign up</button>
                 <a href="#" id="review-details-link">Review Your Details</a>
             </div>
         </div>
