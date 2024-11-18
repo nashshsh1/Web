@@ -28,10 +28,9 @@ nextButton.onclick = function() {
     signupPopup.style.display = 'none'; // Hide the signup popup
 }
 
-// Navigate to signup_complete.html when Sign Up button is clicked
 const signUpButton = document.querySelector('#confirm-email-popup button');
 signUpButton.onclick = function() {
-    window.location.href = './dashboard/vid.html'; // Redirect to the dashboard page
+    window.location.href = './video/vid.html'; // Redirect to the dashboard page
 };
 
 // Return to the signup popup when the Review Your Details link is clicked
