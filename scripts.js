@@ -31,7 +31,7 @@ nextButton.onclick = function() {
 // Navigate to signup_complete.html when Sign Up button is clicked
 const signUpButton = document.querySelector('#confirm-email-popup button');
 signUpButton.onclick = function() {
-    window.location.href = './dashboard/dashboard.html'; // Redirect to the dashboard page
+    window.location.href = './dashboard/vid.html'; // Redirect to the dashboard page
 };
 
 // Return to the signup popup when the Review Your Details link is clicked
@@ -53,5 +53,5 @@ window.onclick = function(event) {
 // Redirect to /dashboard/dashboard.html when the login button is clicked
 const loginButton = document.getElementById('login-button');
 loginButton.onclick = function() {
-    window.location.href = './dashboard/dashboard.html'; // Redirect to the dashboard
+    window.location.href = './dashboard/vid.html'; // Redirect to the dashboard
 };
